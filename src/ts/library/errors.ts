@@ -16,7 +16,7 @@ export class UnexpectedOrderOfCharacters extends Error {
   constructor(index: number, character: string) {
     super(`Unexpected character "${character}" at index ${index}`);
 
-    this.name = "IllegalCharacter";
+    this.name = "UnexpectedOrderOfCharacters";
     this.index = index;
     this.character = character;
   }

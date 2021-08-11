@@ -1,0 +1,46 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+
+  label {
+    font-size: 1.8rem;
+  }
+
+  input {
+    padding: 0.2rem;
+    font-size: 2rem;
+
+    &.error {
+      outline-color: red;
+    }
+
+    &::placeholder {
+      font-size: 1rem;
+    }
+  }
+
+  .result {
+    text-align: center;
+    color: green;
+    cursor: pointer;
+  }
+}
+
+.error-message {
+  color: red;
+}

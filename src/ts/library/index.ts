@@ -7,9 +7,7 @@ export function calculate(input: string) {
   return computeTrunk(ast);
 }
 
-export function computeTrunk(
-  astOrOperand: CalculationASTTrunk | number
-): number {
+function computeTrunk(astOrOperand: CalculationASTTrunk | number): number {
   if (typeof astOrOperand === "number") {
     return astOrOperand;
   }
